@@ -1,0 +1,10 @@
+<h1>Héroes <small> Marvel y DC</small></h1>
+<hr>
+
+<div class="container py-4">
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+    </div>
+  </div>
+</div>
